@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SessionsPreviewActivity">
+
+
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PECHE"
+        android:layout_marginTop="70dp"
+        android:textSize="40dp" />
+
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titre"
+        android:layout_marginTop="173dp"
+        android:text="Date :  "
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titre"
+        android:layout_toRightOf="@id/text_date"
+        android:text="Date enregistrée"
+        android:layout_marginTop="173dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/text_lieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titre"
+        android:layout_marginTop="250dp"
+        android:text="Lieu : "
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/lieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titre"
+        android:layout_toRightOf="@id/text_lieu"
+        android:text="oui/non"
+        android:layout_marginTop="250dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/text_contenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titre"
+        android:layout_marginTop="350dp"
+        android:text="Contenu : "
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/contenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titre"
+        android:layout_toRightOf="@id/text_contenu"
+        android:text="contenu"
+        android:layout_marginTop="350dp"
+        android:textSize="25dp" />
+
+</RelativeLayout>

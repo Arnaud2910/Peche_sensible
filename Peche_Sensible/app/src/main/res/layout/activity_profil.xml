@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/profil1_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/profil2_btn"
+        android:text="Profil 1"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_toStartOf="@+id/profil2_btn" />
+
+    <Button
+        android:id="@+id/profil2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Profil 2" />
+
+    <Button
+        android:id="@+id/profil3_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/profil2_btn"
+        android:text="Profil 3" />
+
+    <TextView
+        android:layout_marginTop="140dp"
+        android:id="@+id/text_profil_actif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        tools:text="Profil actif : " />
+
+    <TextView
+        android:layout_marginTop="140dp"
+        android:id="@+id/profil_actif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/text_profil_actif"
+        tools:text=" numéro profil actif " />
+
+    <TextView
+        android:layout_marginTop="240dp"
+        android:id="@+id/text_nom_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        tools:text="Nom du profil : " />
+
+    <TextView
+        android:layout_marginTop="240dp"
+        android:id="@+id/nom_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/text_nom_profil"
+        tools:text=" nom profil actif " />
+
+    <TextView
+        android:layout_marginTop="340dp"
+        android:id="@+id/text_lieu_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        tools:text="Lieu préféré : " />
+
+    <TextView
+        android:layout_marginTop="340dp"
+        android:id="@+id/lieu_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/text_nom_profil"
+        tools:text=" lieu enregistré " />
+
+
+
+    <Button
+        android:id="@+id/modification_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modifier ce profil"
+        android:layout_marginTop="500dp" />
+
+    <Button
+        android:id="@+id/suppression_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supprimer ce profil"
+        android:layout_toRightOf="@id/modification_btn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="500dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/text_modification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        tools:text="Modification du profil en cours" />
+
+
+    <TextView
+        android:layout_marginTop="140dp"
+        android:id="@+id/text_profil_actif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        tools:text="Profil modifié : " />
+
+    <TextView
+        android:layout_marginTop="140dp"
+        android:id="@+id/profil_actif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/text_profil_actif"
+        tools:text=" numéro profil actif " />
+
+    <TextView
+        android:layout_marginTop="240dp"
+        android:id="@+id/text_nom_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        tools:text="Nom du profil : " />
+
+    <TextView
+        android:layout_marginTop="240dp"
+        android:id="@+id/nom_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/text_nom_profil"
+        tools:text=" nom profil actif " />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_below="@+id/nom_profil"
+        android:layout_width="250dp"
+        android:hint="Entrer le nouveau nom ici"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/save_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:layout_below="@+id/nom_profil"
+        android:layout_toRightOf="@id/editname" />
+
+
+
+    <TextView
+        android:layout_marginTop="340dp"
+        android:id="@+id/text_lieu_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        tools:text="Lieu préféré : " />
+
+    <TextView
+        android:layout_marginTop="340dp"
+        android:id="@+id/lieu_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/text_nom_profil"
+        tools:text=" lieu enregistré " />
+
+    <EditText
+        android:id="@+id/editlieu"
+        android:layout_below="@+id/lieu_profil"
+        android:layout_width="250dp"
+        android:hint="Entrer le nouveau lieu ici"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/save_lieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:layout_below="@+id/lieu_profil"
+        android:layout_toRightOf="@id/editname" />
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/retour_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        android:layout_marginTop="500dp" />
+
+
+
+</RelativeLayout>

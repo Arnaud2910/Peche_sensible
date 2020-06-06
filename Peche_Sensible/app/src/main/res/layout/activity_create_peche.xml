@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="53dp">
+        <TextView
+            android:id="@id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Créer une pêche"
+            android:textSize="40dp"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Sélectionnez la date, l'espèce et nombre d'entités péchées et validez" />
+
+        <Spinner
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_toRightOf="@+id/day"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_toRightOf="@+id/month"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/n_catch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/day"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/N_catch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/day"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/n_catch"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/n_catch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/n_catch"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/N_catch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/n_catch"
+            android:layout_toRightOf="@+id/n_catch1"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/n_catch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/n_catch1"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/N_catch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/n_catch1"
+            android:layout_toRightOf="@+id/n_catch2"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/n_catch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/n_catch2"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/N_catch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/n_catch2"
+            android:layout_toRightOf="@+id/n_catch3"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/n_catch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/n_catch3"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/N_catch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/n_catch3"
+            android:layout_toRightOf="@+id/n_catch4"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_alignRight="@id/text"
+            android:onClick="save"
+            android:text="Save" />
+
+
+        <EditText
+            android:id="@+id/inputEt"
+            android:hint="Tapez ici le lieu de votre pêche ..."
+            android:minHeight="15dp"
+            android:padding="25dp"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/saveBtn"
+            />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

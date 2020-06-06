@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Conseil">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Conseils et reglementation"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Retrouvez ici quelques conseils et les poins principaux de la règlementation"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/conseil_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtitle"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Prendre connaissance de la météo et des horaires de marées."
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/conseil_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conseil_1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Rester attentif à l'évolution des élements"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/conseil_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conseil_2"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Eviter au maximum de partir seul, et surtout prévenir quelqu'un restant à terre de son heure prévue de retour"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/conseil_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conseil_3"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="En cas de problème, le 196 est le numéro d'urgence, il permet de joindre directement un centre de sauvetage en mer (CROSS)"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/conseil_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conseil_4"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="La pêche ne doit s'exercer uniquement à des fins de consommation exclusive du pêcheur et de sa famille"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/conseil_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conseil_5"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Dans un objectif de préservation de l'environnement, les pierres retournées doivent être remises en place, les trous rebouchés et éviter au maximum de dégrader les habitats naturels"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/conseil_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conseil_6"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Le tri des captures doit être fait sur le lieu de capture au fur et à mesure"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/conseil_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conseil_7"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Dans un objectif de préservation de l'environnement, les pierres retournées doivent être remises en place, les trous rebouchés et éviter au maximum de dégrader les habitats naturels"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>
+</ScrollView>
